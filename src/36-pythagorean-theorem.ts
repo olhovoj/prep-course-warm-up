@@ -10,7 +10,14 @@ export {};
  * and name them in your function accordingly.
  */
 
-const pythagoreanTheorem = () => {};
+const pythagoreanTheorem = (a: number, b: number): number | string => {
+  const c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+  if (c < a + b) {
+    return c;
+  } else {
+    return "Invalid triangle";
+  }
+};
 
 console.log(pythagoreanTheorem(2, 4)); // Expected result: 4.47213595499958
 console.log(pythagoreanTheorem(3, 4)); // Expected result: 5

@@ -12,7 +12,10 @@ export {};
  */
 
 const helloWorld = function() {
-  return "";
+  return "Hello World";
 };
-
-console.log(); // Expected output: "Hello World"
+// function helloWorld() {
+//   return "Hello World"
+//   }
+//const helloWorld = () => "Hello World" стрелочная функция
+console.log(helloWorld()); // Expected output: "Hello World"

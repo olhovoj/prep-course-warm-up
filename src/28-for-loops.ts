@@ -9,7 +9,12 @@ export {};
  *  - https://www.youtube.com/watch?v=Kn06785pkJg (JavaScript Loops Made Easy)
 */
 
-function goThroughNumbers(start, end) {}
+function goThroughNumbers(start: number, end: number) {
+    for (let i = start; i <= end; i++) {
+        Number.isInteger(i/2) ? console.log(`${i} - even`) : console.log(`${i} - odd`)
+    }
+    console.log()
+}
 
 goThroughNumbers(3, 7);
 /* Expected output:

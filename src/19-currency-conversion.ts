@@ -15,9 +15,16 @@ export {};
  */
 
 // You are allowed to change this function
-function convertToUSD(price) {}
+function convertToUSD(price: number) {
+    const GBPtoUSD = 1.23;
+    return (price * GBPtoUSD).toFixed(2)
+}
 // You are allowed to change this function
-function convertToBRL(price) {}
+function convertToBRL(price: number) {
+    const GBPtoBR = 6.03;
+    const fee = 0.01;
+    return (price * GBPtoBR * (1 + fee)).toFixed(2)
+}
 
 const product = "You don't know JS";
 const price = 12.5;

@@ -9,17 +9,22 @@ export {};
  *  - https://www.w3schools.com/js/js_objects.asp
  */
 
-const books = [
+type BooksType = {
+  title: string;
+  author: string;
+}[];
+
+const books: BooksType = [
   {
     title: "4 hour work week",
-    author: "Tim Ferris"
+    author: "Tim Ferris",
   },
   {
     title: "Tools of Titans",
-    author: "Tim Ferris"
-  }
+    author: "Tim Ferris",
+  },
 ];
 
-const getTheTitles = () => {};
+const getTheTitles = (bookList: BooksType) => bookList.map((book) => book.title);
 
 console.log(getTheTitles(books)); // Expected output: ['4 hour work week', 'Tools of Titans']
